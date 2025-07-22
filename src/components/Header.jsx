@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="header">
+    <div className="flex justify-between w-screen items-center content-center">
       <div className="header-logo">FilmPicker</div>
-      <nav className="header-nav">
+      <nav className="flex gap-4">
         <a href="/">Главная</a>
 
         <a href="/about">О нас</a>

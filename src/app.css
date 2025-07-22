@@ -1,9 +1,10 @@
+@import "tailwindcss";
 a {
   color: blue;
   text-decoration: none;
 }
 
-.app {
+/* .app {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -154,4 +155,4 @@ a {
 .footer-content {
   text-align: center;
   width: 10;
-}
+} */

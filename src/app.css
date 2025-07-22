@@ -1,0 +1,157 @@
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+.header-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-exit {
+  padding: 20px;
+}
+
+.footer {
+  bottom: 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.film-list {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+.film-list-container {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.film-item {
+  padding: 1rem;
+  margin: 10px;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.film-item:last-child {
+  border-bottom: none;
+}
+
+.film-list-footer {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.film-page {
+  margin: 10px;
+  width: 70%;
+  flex: 1;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+}
+
+.film-page-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.film-page-content {
+  padding: 1rem;
+  flex: 1;
+  width: 100%;
+}
+
+.film-page-footer {
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.film-item-actions {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.error-page {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-content {
+  text-align: center;
+  width: 10;
+}

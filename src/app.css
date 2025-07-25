@@ -4,6 +4,20 @@ a {
   text-decoration: none;
 }
 
+button {
+  color: gray;
+  background-color: rgba(62, 62, 62, 0.098);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: aliceblue;
+  background-color: rgb(62, 62, 62);
+}
+
 /* .app {
   display: flex;
   flex-direction: column;

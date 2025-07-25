@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="footer">
-      <div className="footer-content">
+    <div className="flex bg-gray-200 rounded-t-3xl p-5 justify-center">
+      <div className="flex">
         <p>
           Pet-project by{" "}
           <a href="https://t.me/make2step" target="_blank">

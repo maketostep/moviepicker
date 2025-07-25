@@ -8,15 +8,18 @@ export default function FilmList() {
     setFilmData(filmData);
   }, []);
   return (
-    <div className="film-list">
-      <div className="film-list-container">
+    <div className="flex flex-col w-full">
+      <div className="flex flex-col">
         {filmData.map((film) => (
-          <div className="film-item" key={film.id}>
-            <h3>{film.title}</h3>
-            <p>{film.description}</p>
-            <div className="film-item-actions">
+          <div
+            className="flex flex-col text-center bg-blue-200 rounded-4xl mb-5 p-3"
+            key={film.id}
+          >
+            <h3 className="text-2xl underline">{film.title}</h3>
+            <p className="text-xl p-3">{film.description}</p>
+            <div className="flex justify-center">
               <Link to={`/film/${film.id}`}>
-                <button>Смотреть</button>
+                <button className="justify-center">Смотреть</button>
               </Link>
             </div>
           </div>

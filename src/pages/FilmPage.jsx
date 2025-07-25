@@ -11,20 +11,22 @@ export default function FilmPage() {
 
   if (!film) return <div>Loading...</div>;
   return (
-    <div className="film-page">
-      <div className="film-page-header">
-        <h2>{film.title}</h2>
+    <div className="flex flex-col  justify-center items-center bg-gray-200 py-10 border-t border-b">
+      <div className="flex bg-amber-200 p-4 rounded-3xl">
+        <h2 className="text-3xl underline">{film.title}</h2>
       </div>
-      <div className="film-page-content">
+      <div className="film-page-content mt-14">
         {film ? (
           <>
-            <p>{film.description}</p>
+            <p className="text-2xl bg-amber-200 p-4 rounded-xl">
+              {film.description}
+            </p>
           </>
         ) : (
           <p>Film not found</p>
         )}
       </div>
-      <div className="film-page-footer">
+      <div className="m-4">
         <Link to={`/`}>
           <button>Назад</button>
         </Link>

@@ -11,7 +11,7 @@ export default function FilmPage() {
 
   if (!film) return <div>Loading...</div>;
   return (
-    <div className="flex flex-col  justify-center items-center bg-gray-200 py-10 border-t border-b">
+    <div className="flex flex-col rounded-xl shadow-2xl justify-center items-center bg-gray-200 py-10 border-t border-b">
       <div className="flex bg-amber-200 p-4 rounded-3xl">
         <h2 className="text-3xl underline">{film.title}</h2>
       </div>

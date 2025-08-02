@@ -1,13 +1,15 @@
-import React from "react";
-import films from "../data/films.json";
 import { Link } from "react-router";
-export default function NewFilmList() {
-  const newFilms = films.filter((film) => film.new);
+import { MovieService } from "../services/MovieService";
+import { Movie } from "../models/Movie";
+
+export default function FilmList() {
+  const allMovies: Movie[] = MovieService.getAll();
+
   return (
     <ul>
-      {newFilms.map((film) => (
+      {allMovies.map((film: Movie) => (
         <li
-          className="bg-blue-100 p-4 rounded-lg shadow-md mb-4 shadow p-4 hover:shadow-lg hover:scale-105 transition-transform"
+          className="bg-blue-100 rounded-lg mb-4 shadow p-4 hover:shadow-lg hover:scale-105 transition-transform"
           key={film.id}
         >
           <h3 className="text-xl font-bold">{film.title}</h3>

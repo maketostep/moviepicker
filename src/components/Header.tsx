@@ -10,7 +10,7 @@ export default function Header() {
 
           <Link to="/about">О нас</Link>
 
-          <Link to="/contact">Контакты</Link>
+          <Link to="/contacts">Контакты</Link>
         </nav>
         <div className="text-black bg-gray-500 p-2 rounded-2xl cursor-pointer hover:bg-gray-400 transition-all">
           Выход
